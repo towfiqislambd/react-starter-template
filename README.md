@@ -7,3 +7,5 @@
 4. Axios
 5. Tanstack Query
 6. Aos Animation
+7. Tailwind CSS
+8. Shadcn UI
