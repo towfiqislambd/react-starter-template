@@ -9,3 +9,5 @@
 6. Aos Animation
 7. Tailwind CSS
 8. Shadcn UI
+9. React JS
+10. Javascript
