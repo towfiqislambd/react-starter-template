@@ -1,6 +1,6 @@
 # React Starter Template
 
-## Used Technologies:
+## Used Packages:
 1. React Router
 2. React Icons
 3. React Hot Toast
