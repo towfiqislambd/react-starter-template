@@ -1,39 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
 @custom-variant dark (&:is(.dark *));
 
-/* All Font Family */
-@font-face {
-  font-family: 'lucida';
-  src: url('/fonts/lucida_regular.ttf') format('truetype');
-}
+@theme {
+  /* Colors */
+  --color-primary-blue: #21489f,
 
-@font-face {
-  font-family: 'arial_regular';
-  src: url('/fonts/arial_regular.ttf') format('truetype');
-  font-weight: 400;
-}
+  /* Font Family */
+  --font-roboto: "Roboto", sans-serif;
 
-@font-face {
-  font-family: 'arial_medium';
-  src: url('/fonts/arial_medium.ttf') format('truetype');
-  font-weight: 500;
-}
+  /* Breakpoints */
+  --breakpoint-xs: 375px;
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 576px;
+  --breakpoint-lg: 768px;
+  --breakpoint-xl: 1024px;
+  --breakpoint-2xl: 1280px;
+  --breakpoint-3xl: 1536px;
 
-@font-face {
-  font-family: 'arial_bold';
-  src: url('/fonts/arial_bold.ttf') format('truetype');
-  font-weight: 700;
-}
-
-
-@theme inline {
-  /* Font family */
-  --font-lucida: lucida, sans-serif;
-  --font-arialRegular: arial_regular, sans-serif;
-  --font-arialMedium: arial_medium, sans-serif;
-  --font-arialBold: arial_bold, sans-serif;
-
+  /* Other for shadcn */
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -140,12 +126,16 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
+/* body {
+  @apply font-roboto;
+} */
 
-  body {
-    @apply bg-background text-foreground font-lucida;
-  }
+/* Custom CSS */
+
+.section_title {
+  @apply text-xl;
+}
+
+.section_description {
+  @apply text-base;
 }

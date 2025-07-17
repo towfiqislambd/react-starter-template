@@ -1,11 +1,14 @@
-import useAuth from "@/hooks/useAuth";
 import { Navigate } from "react-router-dom";
-import { LuLoaderCircle } from "react-icons/lu";
+import useAuth from "@/Hooks/useAuth";
 
 const PrivateRoute = ({ children }) => {
   const { user, token, loading } = useAuth();
 
-  if (loading) return <LuLoaderCircle />;
+  if (loading) {
+    return (
+      <div className="h-svh flex justify-center items-center">Loading....</div>
+    );
+  }
 
   if (token || user) return children;
 
