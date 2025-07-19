@@ -5,7 +5,7 @@
 
 @theme {
   /* Colors */
-  --color-primary-blue: #21489f,
+  --color-primary-blue: #21489f;
 
   /* Font Family */
   --font-roboto: "Roboto", sans-serif;
@@ -126,9 +126,9 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
-/* body {
+body {
   @apply font-roboto;
-} */
+}
 
 /* Custom CSS */
 
