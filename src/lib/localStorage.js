@@ -1,6 +1,6 @@
 export function setItem(key, value) {
   try {
-    window.localStorage.setItem(key, JSON.stringify(value));
+    window.localStorage.setItem(key, value);
   } catch (err) {
     console.error(err);
   }
@@ -9,7 +9,7 @@ export function setItem(key, value) {
 export function getItem(key) {
   try {
     const data = window.localStorage.getItem(key);
-    return data ? JSON.parse(data) : undefined;
+    return data ? data : undefined;
   } catch (err) {
     console.error(err);
   }
