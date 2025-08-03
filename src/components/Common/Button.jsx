@@ -8,6 +8,7 @@ const Button = ({
   className,
   animation = true,
   variant,
+  ...props
 }) => {
   return (
     <button
@@ -20,6 +21,7 @@ const Button = ({
         variant === "secondary_btn" && "text-green-500",
         className
       )}
+      {...props}
     >
       {text}
     </button>
